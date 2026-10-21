@@ -149,6 +149,11 @@ set "PATH=%DLLTOOL%;%PATH%"
 echo       dlltool: %DLLTOOL%
 :dlltool_ok
 
+rem ---------- Пути с этого компьютера не попадают в exe ----------
+rem Папка проекта превращается в "zvukopad", папка пользователя - в "~".
+set "ZV_ROOT=%~dp0"
+set "ZV_ROOT=%ZV_ROOT:~0,-1%"
+set "ZV_REMAP=--config "build.rustflags=['--remap-path-prefix=%USERPROFILE%=~','--remap-path-prefix=%ZV_ROOT%=zvukopad']""
 rem ---------- 2. Библиотеки ----------
 rem Выбранный сервер запоминается в .toolchain\crates-mirror.cmd: cargo хранит скачанное
 rem отдельно для каждого сервера, поэтому все команды должны использовать один и тот же.
@@ -175,7 +180,7 @@ echo       Библиотеки на месте.
 rem ---------- 3. Сборка ----------
 echo.
 echo [3/4] Компиляция. Первая сборка занимает несколько минут, следующие - секунды.
-%CARGO% build --release --locked --offline %ZV_CARGO_ARGS%
+%CARGO% build --release --locked --offline %ZV_CARGO_ARGS% %ZV_REMAP%
 if errorlevel 1 goto :fail_build
 
 rem ---------- 4. Папка с готовой программой ----------
@@ -379,7 +384,7 @@ goto :fail_end
 :fail_build
 echo.
 echo ОШИБКА компиляции. Сохраняю подробности в build_log.txt ...
-%CARGO% build --release --locked --offline --color never %ZV_CARGO_ARGS% > build_log.txt 2>&1
+%CARGO% build --release --locked --offline --color never %ZV_CARGO_ARGS% %ZV_REMAP% > build_log.txt 2>&1
 echo Пришлите файл build_log.txt тому, кто помогает с программой.
 goto :fail_end
 
