@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 500 500" width="1024" height="1024">
+  <!-- Маскот «Рыжик» (Звукопад). Источник — анимация маскота, персонаж 1. -->
+  <defs>
+    <radialGradient id="hair" cx="45%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffc27a"/><stop offset=".55" stop-color="#f58d2e"/><stop offset="1" stop-color="#b9561a"/>
+    </radialGradient>
+    <radialGradient id="hairBlk" cx="45%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#4a4a54"/><stop offset=".6" stop-color="#25252b"/><stop offset="1" stop-color="#0e0e11"/>
+    </radialGradient>
+    <radialGradient id="skin" cx="50%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#fff0e2"/><stop offset="1" stop-color="#f7c9a5"/>
+    </radialGradient>
+    <radialGradient id="iris" cx="50%" cy="70%" r="65%">
+      <stop offset="0" stop-color="#ffe27a"/><stop offset=".5" stop-color="#ff9a1f"/><stop offset="1" stop-color="#8a3a00"/>
+    </radialGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a3a42"/><stop offset="1" stop-color="#0d0d10"/>
+    </linearGradient>
+    <linearGradient id="phoneOr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb35c"/><stop offset="1" stop-color="#c9581a"/>
+    </linearGradient>
+    <linearGradient id="hoodie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c2c33"/><stop offset="1" stop-color="#141417"/>
+    </linearGradient>
+    <linearGradient id="hoodieOr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffa448"/><stop offset="1" stop-color="#d2621a"/>
+    </linearGradient>
+    <linearGradient id="earIn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb1a0"/><stop offset="1" stop-color="#ff7d6b"/>
+    </linearGradient>
+  </defs>
+  
+  
+    <g class="body">
+      <g class="tail">
+        <path d="M240 395 Q322 412 334 350 Q342 300 312 278" fill="none" stroke="#e37a22" stroke-width="24" stroke-linecap="round"/>
+        <path d="M333 330 l-22 -4 M330 362 l-22 -6" stroke="#b5551a" stroke-width="6" stroke-linecap="round"/>
+        <path d="M312 278 Q326 286 332 302" fill="none" stroke="#1a1a1e" stroke-width="22" stroke-linecap="round"/>
+      </g>
+      <!-- ноги -->
+      <path d="M172 400 L168 468" stroke="#232328" stroke-width="34" stroke-linecap="round"/>
+      <path d="M228 400 L232 468" stroke="#232328" stroke-width="34" stroke-linecap="round"/>
+      <g>
+        <path d="M140 484 Q140 462 168 462 Q192 462 194 484 Z" fill="#ff8c1a"/>
+        <rect x="136" y="480" width="62" height="10" rx="5" fill="#fff4e8"/>
+        <path d="M160 468 l10 0 M158 474 l12 0" stroke="#fff4e8" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g class="footR">
+        <path d="M206 484 Q208 462 232 462 Q260 462 260 484 Z" fill="#ff8c1a"/>
+        <rect x="202" y="480" width="62" height="10" rx="5" fill="#fff4e8"/>
+        <path d="M230 468 l10 0 M230 474 l12 0" stroke="#fff4e8" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <rect x="187" y="268" width="26" height="30" rx="10" fill="#f2bf98"/>
+      <!-- худи -->
+      <path d="M146 300 Q128 360 138 410 Q200 424 262 410 Q272 360 254 300 Q228 286 200 286 Q172 286 146 300 Z" fill="url(#hoodie)"/>
+      <path d="M138 398 Q200 412 262 398 L262 410 Q200 424 138 410 Z" fill="#ff8c1a"/>
+      <path d="M160 294 Q200 322 240 294 Q236 308 200 314 Q164 308 160 294 Z" fill="#33333b" stroke="#ff8c1a" stroke-width="2.5"/>
+      <g stroke="#ff8c1a" stroke-width="3" stroke-linecap="round"><path d="M190 312 L187 344"/><path d="M210 312 L213 344"/></g>
+      <circle cx="187" cy="346" r="4" fill="#ff8c1a"/><circle cx="213" cy="346" r="4" fill="#ff8c1a"/>
+      <path d="M166 372 Q200 364 234 372 L230 396 L170 396 Z" fill="none" stroke="#3d3d46" stroke-width="3"/>
+      <g fill="#ff8c1a">
+        <rect x="224" y="334" width="5" height="10" rx="2.5"/><rect x="231" y="328" width="5" height="16" rx="2.5"/><rect x="238" y="331" width="5" height="13" rx="2.5"/>
+      </g>
+      <!-- левая рука с микрофоном -->
+      <g class="armL">
+        <path d="M152 312 Q118 350 158 360" fill="none" stroke="#25252b" stroke-width="30" stroke-linecap="round"/>
+        <path d="M150 352 Q156 362 168 362" fill="none" stroke="#ff8c1a" stroke-width="5" stroke-linecap="round"/>
+        <rect x="163" y="336" width="13" height="40" rx="5" fill="#222228"/>
+        <rect x="163" y="368" width="13" height="4" fill="#ff8c1a"/>
+        <circle cx="169.5" cy="326" r="15" fill="url(#phone)"/>
+        <path d="M157 320 h25 M155 327 h29 M157 334 h25 M163 313 v26 M170 311 v30 M177 313 v26" stroke="#ff8c1a" stroke-width="1.4" opacity=".75"/>
+        <circle cx="164" cy="320" r="3.5" fill="#fff" opacity=".5"/>
+        <circle cx="172" cy="356" r="13" fill="url(#skin)"/>
+        <path d="M162 352 q8 -4 16 0" fill="none" stroke="#e0a07a" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <g class="head">
+      <path d="M72 185 Q70 52 200 48 Q330 52 328 185 Q332 262 304 302 Q290 272 286 238 L114 238 Q110 272 96 302 Q68 262 72 185 Z" fill="url(#hair)"/>
+      <g class="earL">
+        <path d="M108 118 Q92 18 132 16 Q158 30 178 72 Z" fill="url(#hair)"/>
+        <path d="M118 104 Q110 42 134 36 Q150 50 164 76 Z" fill="url(#earIn)"/>
+        <path d="M110 58 Q106 18 132 16 Q142 22 148 36 Q126 32 110 58 Z" fill="#1a1a1e"/>
+      </g>
+      <g class="earR">
+        <path d="M292 118 Q308 18 268 16 Q242 30 222 72 Z" fill="url(#hair)"/>
+        <path d="M282 104 Q290 42 266 36 Q250 50 236 76 Z" fill="url(#earIn)"/>
+        <path d="M290 58 Q294 18 268 16 Q258 22 252 36 Q274 32 290 58 Z" fill="#1a1a1e"/>
+      </g>
+      <ellipse cx="200" cy="192" rx="100" ry="90" fill="url(#skin)"/>
+      <!-- чёлка -->
+      <path d="M98 178 Q96 60 200 56 Q304 60 302 178 L290 150 L276 166 L262 134 L246 160 L228 128 L212 156 L198 126 L180 158 L164 130 L150 160 L136 136 L122 166 L110 148 Z" fill="url(#hair)"/>
+      <path d="M140 82 Q170 66 205 68" fill="none" stroke="#ffe0b0" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+      <path class="ahoge" d="M196 60 Q178 18 214 12 Q194 30 206 60 Z" fill="url(#hair)"/>
+      <!-- глаза -->
+      <g class="eye">
+        <ellipse cx="158" cy="206" rx="21" ry="26" fill="#1f0f06"/>
+        <ellipse cx="158" cy="209" rx="17" ry="22" fill="url(#iris)"/>
+        <ellipse cx="158" cy="211" rx="8" ry="13" fill="#140a04"/>
+        <circle cx="151" cy="197" r="7" fill="#fff"/><circle cx="165" cy="219" r="3" fill="#fff" opacity=".9"/>
+        <path d="M133 192 Q158 168 184 190" fill="none" stroke="#1f0f06" stroke-width="5" stroke-linecap="round"/>
+        <path d="M134 192 l-8 -5" stroke="#1f0f06" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g class="eye">
+        <ellipse cx="242" cy="206" rx="21" ry="26" fill="#1f0f06"/>
+        <ellipse cx="242" cy="209" rx="17" ry="22" fill="url(#iris)"/>
+        <ellipse cx="242" cy="211" rx="8" ry="13" fill="#140a04"/>
+        <circle cx="235" cy="197" r="7" fill="#fff"/><circle cx="249" cy="219" r="3" fill="#fff" opacity=".9"/>
+        <path d="M216 190 Q242 168 267 192" fill="none" stroke="#1f0f06" stroke-width="5" stroke-linecap="round"/>
+        <path d="M266 192 l8 -5" stroke="#1f0f06" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <ellipse cx="128" cy="240" rx="16" ry="8" fill="#ff6a5e" opacity=".38"/>
+      <ellipse cx="272" cy="240" rx="16" ry="8" fill="#ff6a5e" opacity=".38"/>
+      <g stroke="#d9774a" stroke-width="2.4" stroke-linecap="round" opacity=".8">
+        <path d="M114 234 l14 2"/><path d="M114 242 l14 0"/><path d="M286 234 l-14 2"/><path d="M286 242 l-14 0"/>
+      </g>
+      <circle cx="200" cy="236" r="2.2" fill="#e08a6e"/>
+      <path d="M189 245 Q194.5 253 200 245 Q205.5 253 211 245" fill="none" stroke="#6a3216" stroke-width="3" stroke-linecap="round"/>
+      <!-- наушники -->
+      <path d="M96 172 Q92 36 200 34 Q308 36 304 172" fill="none" stroke="#1a1a1e" stroke-width="18" stroke-linecap="round"/>
+      <path d="M104 158 Q102 48 200 46 Q298 48 296 158" fill="none" stroke="#ff8c1a" stroke-width="3.5" stroke-linecap="round" opacity=".9"/>
+      <g>
+        <rect x="74" y="150" width="48" height="92" rx="24" fill="url(#phone)"/>
+        <rect x="82" y="162" width="32" height="68" rx="16" fill="none" stroke="#ff8c1a" stroke-width="3"/>
+        <circle class="led" cx="98" cy="196" r="7" fill="#ff8c1a"/>
+      </g>
+      <g>
+        <rect x="278" y="150" width="48" height="92" rx="24" fill="url(#phone)"/>
+        <rect x="286" y="162" width="32" height="68" rx="16" fill="none" stroke="#ff8c1a" stroke-width="3"/>
+        <circle class="led" cx="302" cy="196" r="7" fill="#ff8c1a"/>
+      </g>
+    </g>
+    <!-- правая рука поверх головы (раньше её перекрывали волосы) -->
+      
+      <g class="armR" transform="rotate(10 252 312)">
+        <path d="M250 312 Q292 300 300 254" fill="none" stroke="#25252b" stroke-width="30" stroke-linecap="round"/>
+        <path d="M290 262 Q300 268 310 262" fill="none" stroke="#ff8c1a" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="301" cy="242" r="15" fill="url(#skin)"/>
+        <path d="M292 236 q9 -6 18 0 M293 244 q8 -4 16 0" fill="none" stroke="#e0a07a" stroke-width="2" stroke-linecap="round"/>
+      </g>
+
+</svg>

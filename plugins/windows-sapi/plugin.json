@@ -1,0 +1,10 @@
+{
+  "id": "windows-sapi",
+  "name": "Голоса Windows (SAPI)",
+  "version": "1.0",
+  "description": "Стандартные голоса, установленные в Windows. Работает без интернета.",
+  "type": "tts",
+  "protocol": 1,
+  "command": "powershell.exe",
+  "args": ["-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-File", "sapi_tts.ps1"]
+}

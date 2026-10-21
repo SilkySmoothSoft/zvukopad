@@ -1,0 +1,14 @@
+[package]
+name = "zv-audio"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+cpal = "0.18"
+symphonia = { version = "0.6", default-features = false, features = ["mp3", "flac", "wav", "pcm", "ogg", "vorbis", "aac", "isomp4"] }
+hound = "3.5"
+rtrb = "0.4"
+crossbeam-channel = "0.5"
+parking_lot = "0.12"
+log = "0.4"
+zv-core = { path = "../zv-core" }

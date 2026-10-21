@@ -1,0 +1,17 @@
+[workspace]
+resolver = "3"
+members = ["app", "crates/zv-core", "crates/zv-audio", "crates/zv-plugins"]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+
+# Релиз: быстрее и меньше. Отладочная информация не нужна.
+[profile.release]
+opt-level = 3
+lto = "thin"
+strip = true
+
+# В отладочной сборке библиотеки всё равно оптимизируем — иначе декодирование mp3 очень медленное.
+[profile.dev.package."*"]
+opt-level = 2

@@ -1,0 +1,10 @@
+[package]
+name = "zv-plugins"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+zv-core = { path = "../zv-core" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+log = "0.4"

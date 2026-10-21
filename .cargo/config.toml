@@ -1,0 +1,7 @@
+# Настройки сборки проекта (действуют только внутри этой папки).
+
+# Если кто-то соберёт через MSVC — вшиваем библиотеку C прямо в exe,
+# чтобы программе не нужен был Visual C++ Redistributable.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
+

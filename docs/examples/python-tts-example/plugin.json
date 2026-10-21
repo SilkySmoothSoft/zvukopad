@@ -1,0 +1,10 @@
+{
+  "id": "python-example",
+  "name": "Пример плагина на Python (пищалка)",
+  "version": "1.0",
+  "description": "Шаблон для своих плагинов: вместо речи генерирует писк, длина зависит от текста.",
+  "type": "tts",
+  "protocol": 1,
+  "command": "python",
+  "args": ["plugin.py"]
+}

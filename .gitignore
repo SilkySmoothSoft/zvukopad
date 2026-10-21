@@ -1,0 +1,10 @@
+/target/
+/.toolchain/
+/release/
+/dist/
+build_log.txt
+__pycache__/
+*.pyc
+w64devkit/
+publish-github.bat
+PUBLISH-GITHUB.txt

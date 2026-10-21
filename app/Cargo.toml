@@ -1,0 +1,28 @@
+[package]
+name = "zvukopad"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+zv-core = { path = "../crates/zv-core" }
+zv-audio = { path = "../crates/zv-audio" }
+zv-plugins = { path = "../crates/zv-plugins" }
+eframe = { version = "0.37", default-features = false, features = ["glow", "default_fonts", "clipboard"] }
+global-hotkey = "0.9"
+crossbeam-channel = "0.5"
+parking_lot = "0.12"
+log = "0.4"
+serde_json = "1"
+# Скачивание моделей синтеза речи. TLS — через Windows (schannel), без OpenSSL и без C-кода.
+ureq = { version = "3.4", default-features = false, features = ["native-tls"] }
+zip = { version = "9", default-features = false, features = ["deflate"] }
+sha2 = "0.11"
+# Буфер обмена для пункта «Вставить» в меню текстовых полей (eframe использует его же).
+arboard = { version = "3.6", default-features = false }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_UI_Shell", "Win32_Foundation", "Win32_System_SystemInformation", "Win32_UI_Input_KeyboardAndMouse", "Win32_Globalization"] }
+
+# Только для проверки сборки на Linux; на Windows не используется.
+[target.'cfg(target_os = "linux")'.dependencies]
+eframe = { version = "0.37", default-features = false, features = ["x11"] }
