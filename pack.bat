@@ -38,7 +38,7 @@ mkdir "%SRC%"
 for %%d in (app crates plugins docs locales assets tools .cargo .github) do (
     if exist "%%d" robocopy "%%d" "%SRC%\%%d" /E /XD %XD% /XF %XF% /NFL /NDL /NJH /NJS /NP >nul
 )
-for %%f in (Cargo.toml Cargo.lock rustfmt.toml README.md CHANGELOG.md CHANGELOG.en.md SOURCES.md LICENSE .gitignore .gitattributes app-name.cmd build.bat run.bat pack.bat) do (
+for %%f in (Cargo.toml Cargo.lock rustfmt.toml README.md CHANGELOG.md CHANGELOG.en.md SOURCES.md LICENSE .gitignore .gitattributes app-name.cmd build.bat run.bat pack.bat publish-github.bat PUBLISH-GITHUB.txt) do (
     if exist "%%f" copy /y "%%f" "%SRC%\" >nul
 )
 if not exist "%SRC%\Cargo.lock" goto :fail_src
